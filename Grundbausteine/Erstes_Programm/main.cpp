@@ -15,8 +15,8 @@ int main(int argc, char const *argv[])
 {
     int wert = 0;
     if(argc <=1){
-        std:cout << "Geben Sie eine Zahl ein: ";
-        std:cin >> wert;
+        std::cout << "Geben Sie eine Zahl ein: ";
+        std::cin >> wert;
         if(!std::cin){
             return 1;
         }
@@ -24,6 +24,7 @@ int main(int argc, char const *argv[])
     }else{
         wert=std::stoi(argv[1]);
     }
+    berechne(wert);
 
     return 0;
 }
